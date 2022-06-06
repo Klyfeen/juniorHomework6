@@ -11,12 +11,12 @@ namespace juniorHomework6
         static void Main(string[] args)
         {
             int albumPictures = 52;
-            int specialZone = 3;
-            int includedPictures = albumPictures / specialZone;
-            int unincludedPictures = albumPictures % specialZone;
+            int picturesInRow = 3;
+            int filledRowsOfPictures = albumPictures / picturesInRow;
+            int extraPictures = albumPictures % picturesInRow;
 
-            Console.WriteLine($"Полностью заполненных рядов: {includedPictures}");
-            Console.WriteLine($"Количество картинок сверх меры: {unincludedPictures}");
+            Console.WriteLine($"Количество заполненных рядов картинками: {filledRowsOfPictures}");
+            Console.WriteLine($"Количество картинок сверх меры: {extraPictures}");
         }
     }
 }
